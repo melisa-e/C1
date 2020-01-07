@@ -140,7 +140,7 @@ class Game_Medium extends Phaser.Scene {
     keepMovingStones(stone, catcher) {
         setInterval(function() { 
             //stone.y += 7;
-            stone.y += (game.config.height/300);
+            stone.y += (game.config.height/100);
             if (sec == 0 || lives == 0) {
                 stone.destroy();
             }else{
@@ -161,7 +161,7 @@ class Game_Medium extends Phaser.Scene {
     keepMovingCoins(coin, catcher) {
         setInterval(function() { 
             //coin.y += 7; 
-            coin.y += (game.config.height/300);
+            coin.y += (game.config.height/100);
             if (sec == 0 || lives == 0) {
                 coin.destroy();
             }else{
