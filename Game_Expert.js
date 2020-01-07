@@ -178,7 +178,7 @@ class Game_Expert extends Phaser.Scene {
     keepMovingCoins(coin, catcher) {
         setInterval(function() { 
             //coin.y += 6;
-            coin.y += (game.config.height/300); 
+            coin.y += (game.config.height/50); 
             if (sec == 0 || lives == 0) {
                 coin.destroy();
             }else{
@@ -199,7 +199,7 @@ class Game_Expert extends Phaser.Scene {
     keepMovingBills(bill, catcher) {
         setInterval(function() { 
             //bill.y += 6; 
-            bill.y += (game.config.height/300);
+            bill.y += (game.config.height/50);
             if (sec == 0 || lives == 0) {
                 bill.destroy();
             }else{
